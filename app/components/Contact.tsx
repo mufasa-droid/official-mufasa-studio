@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Fade, G, GradText, sec, wrap } from "./shared";
+import {Mail, MessageCircle, MapPin} from "lucide-react";
 
 export default function Contact() {
   const [form, setForm] = useState({ name:"", email:"", service:"", budget:"", message:"" });
@@ -29,7 +30,7 @@ export default function Contact() {
               onMouseLeave={e=>{ e.currentTarget.style.background=G; e.currentTarget.style.transform="translateY(0)"; }}>
               Start Your Project →
             </a>
-            <a href="https://wa.me/2348000000000" target="_blank" rel="noopener noreferrer"
+            <a href="https://wa.me/2348147952121" target="_blank" rel="noopener noreferrer"
               style={{ display:"inline-flex", alignItems:"center", gap:8, border:"1px solid rgba(255,255,255,.12)", color:"#F0EDE6", fontSize:14, padding:"16px 32px", borderRadius:2, textDecoration:"none", transition:"all .3s" }}
               onMouseEnter={e=>{ e.currentTarget.style.borderColor="rgba(200,151,58,.4)"; e.currentTarget.style.transform="translateY(-2px)"; }}
               onMouseLeave={e=>{ e.currentTarget.style.borderColor="rgba(255,255,255,.12)"; e.currentTarget.style.transform="translateY(0)"; }}>
@@ -46,7 +47,7 @@ export default function Contact() {
                 <h3 style={{ fontFamily:"'Playfair Display',Georgia,serif", fontWeight:700, color:"#F0EDE6", fontSize:24, marginBottom:10 }}>Let's talk about your project.</h3>
                 <p style={{ color:"#8A8478", fontSize:14, lineHeight:1.7 }}>Fill in the form and we'll come back to you within 24 hours with a clear plan and fair quote. No obligations.</p>
               </div>
-              {[{icon:"✉️",l:"Email",v:"hello@mufasastudio.com"},{icon:"💬",l:"WhatsApp",v:"+234 800 000 0000"},{icon:"📍",l:"Location",v:"Lagos, Nigeria"}].map(d=>(
+              {[{icon:Mail ,l:"Email",v:"mufasastudio@gmail.com"},{icon:MessageCircle,l:"WhatsApp",v:"+234 814 795 2121"},{icon: MapPin,l:"Location",v:"Lagos, Nigeria"}].map(d=>(
                 <div key={d.l} style={{ display:"flex", alignItems:"flex-start", gap:14, border:"1px solid rgba(255,255,255,.05)", borderRadius:2, padding:14 }}>
                   <div style={{ width:34, height:34, background:"rgba(200,151,58,.1)", borderRadius:2, display:"flex", alignItems:"center", justifyContent:"center", fontSize:15, flexShrink:0 }}>{d.icon}</div>
                   <div>

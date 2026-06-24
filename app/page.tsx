@@ -21,11 +21,11 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Marquee />
-      {/* <Trust /> */}
+      <Trust />
       <WhoWeHelp />
       <Services />
       <Work />
-      {/* <Process /> */}
+      <Process />
       <WhyUs />
       <Pricing />
       <Insights />
